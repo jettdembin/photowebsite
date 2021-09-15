@@ -1,48 +1,89 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Heebo', sans-serif;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  min-height: 30vh;
-  justify-content: center;
-  align-items: center;
+    font-size: 1.4rem;
 }
 
-header h2 {
-  padding: 2rem;
+nav {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0 1em;
 }
 
-#logo {
-  text-decoration: none;
-  color: black;
+nav div:nth-of-type(1) {
+    width: 4rem;
+    height: 4rem;
+    background-color: #05a081;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 900;
+
 }
 
-.search-form {
-  padding: 2rem;
-  display: flex;
+nav div:nth-of-type(2) {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
 }
 
-.search-form input {
-  font-size: 2rem;
-  padding: 0.5rem;
-  width: 100%;
-  border: none;
-  border: 3px solid rgb(46, 46, 116);
+.join  {
+    margin-left: 3rem;
+    padding: 1em 2em;
+    background-color: #05a081;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 5px;
 }
 
-.search-form button {
-  border: none;
-  padding: 0.5rem;
-  font-size: 1rem;
-  background: rgb(46, 46, 116);
-  color: white;
-  cursor: pointer;
+form {
+    margin: auto;
+    width: 70%;
+    cursor: 
+}
+
+.form-cntr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: block;
+    height: 2rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.search-bar[placeholder] {
+    line-height: 2rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding: 2.5rem 0;
+    padding-left: 1rem;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 1rem auto auto;
 }
