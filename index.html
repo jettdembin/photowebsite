@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style.css" />
     <title>Pexels API</title>
   </head>
@@ -21,7 +20,7 @@
       </nav>
       <section class="center-form-cntr">
         <div class="center-form">
-          <h1>The best free stock photos & videos shared by talented creators</h1>
+          <h1>The best free stock photos & videos shared by talented creators.</h1>
           <form id="search-form">
             <div class="form-cntr">
               <input class="search-bar" id="search-bar" placeholder="Search for free photos and videos" type="text"></input>
@@ -43,13 +42,21 @@
       </section>
     </header>
     <div class="nav-bar-2">
-      <h2 class="hidden show-active" id="home">Home</h2>
-      <h2 class="hidden" id="discover">Discover</h2>
-      <h2 class="hidden" id="videos">Videos</h2>
-      <h2 class="hidden" id="leaderboard">Leaderboard</h2>
-      <h2 class="hidden" id="challenges">Challenges</h2>
+      <h2 class="hidden show-active" id="home-nav">Home</h2>
+      <h2 class="hidden" id="discover-nav">Discover</h2>
+      <h2 class="hidden" id="videos-nav">Videos</h2>
+      <h2 class="hidden" id="leaderboard-nav">Leaderboard</h2>
+      <h2 class="hidden" id="challenges-nav">Challenges</h2>
     </div>
-    <main id="pictures-cntr"></main>
+    <main id="pictures-cntr">
+      <div class="home" id="home">
+        <h2>Free Stock Photos</h2>
+        <h2>Trending</h2>
+      </div>
+      <section class="content-wrapper">
+      </section>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
+
