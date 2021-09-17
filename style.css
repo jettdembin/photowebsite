@@ -12,7 +12,6 @@ html, body {
 }
 
 header {
-    font-size: 1.4rem;
     font-family: 'Heebo', sans-serif;
     height: 55%;
     padding-top: 1rem;
@@ -21,20 +20,20 @@ header {
 nav {
     height: 10%;
     display: flex;
-    padding-top: 1rem;
-    padding: 0 1em;
+    padding: 1rem 2rem 0 2rem;
 }
 
 nav div:nth-of-type(1) {
     width: 4rem;
     height: 4rem;
+    font-weight: 900;
+    font-size: 1.4rem;
     background-color: #05a081;
     display: flex;
     align-items: center;    
     justify-content: center;
     color: #fff;
     border-radius: 10px;
-    font-weight: 900;
 
 }
 
@@ -69,16 +68,19 @@ nav div:nth-of-type(2) {
 }
 
 .center-form {
-    width: 80%;
+    width: 90%;
 }
 
 .center-form h1 {
     font-family: 'Heebo', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
 }
 
 
 form {
-    margin: 0 auto;
+    margin: 1rem auto 1rem auto;
 }
 
 .form-cntr {
@@ -103,7 +105,7 @@ form {
 .search-bar[placeholder] {
     font-family: 'Heebo', sans-serif;
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 400;
     padding: 2.5rem 0;
     padding-left: 1rem;
@@ -128,11 +130,21 @@ form {
 }
 
 ul {
+    width: 85%;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: .5rem;
 }
 
 li {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: .25ch;
     list-style-type: none;
+    color: white;
+    margin-right: .5ch;
+    
 }
 
 /* end of header*/
@@ -144,24 +156,40 @@ li {
 }
 
 .nav-bar-2 {
-    height: 3rem;
+    height: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .nav-bar-2 h2 {
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 400;
     color: #5e5e5e;
 }
 
 #header {
-    background-image: url("https://images.pexels.com/photos/1298684/pexels-photo-1298684.jpeg");
+    background-image: url("https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200");
 }
 
-#pictures-cntr {
-    
+main {
+    padding: 1rem 2rem 0 2rem;
+}
+
+
+.home {
+    display: flex;
+    padding: .5rem 0 1.5rem 0;
+}
+
+.home h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.home h2:nth-of-type(2) {
+    margin-left: auto;
 }
 
 
