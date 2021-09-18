@@ -32,14 +32,14 @@ searchForm.addEventListener('submit', function(e) {
                 
             photos.forEach(function(item) {
                 var image = document.createElement('div');
-                image.innerHTML = `<img src=${item.large}>
+                image.innerHTML = `<img src=${item.medium}>
                 `
                 picturesCntr.appendChild(image);
             });
         }
     }
     var textValue = document.querySelector('#search-bar').value;
-    xhttp.open("GET", `https://api.pexels.com/v1/search?query=${textValue}`, true);
+    xhttp.open("GET", `https://api.pexels.com/v1/search?query=${textValue}&per_page=16`, true);
     xhttp.setRequestHeader('Authorization', '563492ad6f917000010000018a35618275544479aa4dc8840d5ce33a');
     xhttp.send();
 });
