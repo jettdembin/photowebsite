@@ -5,7 +5,6 @@
 }
 
 html, body {
-    width: 100%;
     height: 100%;
     font-size: 62.5%;
     font-family: 'Heebo', sans-serif;
@@ -14,15 +13,16 @@ html, body {
 header {
     font-family: 'Heebo', sans-serif;
     height: 55%;
-    padding-top: 1rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 nav {
     height: 10%;
+    flex-grow: 1;
     display: flex;
-    padding: 1rem 2rem 0 2rem;
 }
 
+/*logo*/
 nav div:nth-of-type(1) {
     width: 4rem;
     height: 4rem;
@@ -47,37 +47,33 @@ nav div:nth-of-type(2) {
 }
 
 .join  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 900;
     border-radius: 5px;
     margin-left: 3rem;
     padding: 1em 2em;
     background-color: #05a081;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: none;
 }
 
-.center-form-cntr {
+section {
     height: 90%;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.center-form {
-    width: 90%;
-}
-
-.center-form h1 {
+.center-form-cntr h1 {
     font-family: 'Heebo', sans-serif;
     font-size: 3rem;
     font-weight: 900;
     color: #ffffff;
 }
-
 
 form {
     margin: 1rem auto 1rem auto;
@@ -88,13 +84,14 @@ form {
     align-items: center;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     border-radius: 5px;
 }
 
 .search-bar {
-    display: block;
+    display: flex;
+    flex-grow: 1;
     height: 2rem;
-    width: 100%;
     border: none;
     border-radius: 5px;
     border-top-right-radius: 0;
@@ -116,11 +113,7 @@ form {
 }
 
 .search-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 1rem auto auto;
-    width: 4rem;
+    width: 5rem;
     height: 5rem;
     border: none;
     border-top-right-radius: 5px;
@@ -158,40 +151,82 @@ li {
 .nav-bar-2 {
     height: 5rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
 }
 
 .nav-bar-2 h2 {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.7rem;
     font-weight: 400;
     color: #5e5e5e;
 }
+
+
+.nav-bar-2 h2:hover  {
+    color: rgb(86, 126, 255);
+}
+
+/*class to add blue tab selector when active*/
+.show-active {
+    border-bottom: 1px solid rgb(86, 126, 255);
+    color: rgb(86, 126, 255);
+}
+
 
 #header {
     background-image: url("https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200");
 }
 
 main {
-    padding: 1rem 2rem 0 2rem;
+    padding: 2.5rem 1.5rem 0 1.5rem;
 }
 
 
 .home {
     display: flex;
-    padding: .5rem 0 1.5rem 0;
+    padding: .5em 0 1.5em 0;
 }
 
-.home h2 {
-    font-size: 1.4rem;
-    font-weight: 400;
+/*Free Stock Photos*/
+.home > h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
-.home h2:nth-of-type(2) {
+.trending {
+    height: 100%;
     margin-left: auto;
 }
 
+.trending h2 {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 1rem;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.content-wrapper img {
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
 
 
 /* small devices */
