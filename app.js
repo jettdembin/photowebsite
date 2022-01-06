@@ -3,6 +3,17 @@ var header = document.querySelector('#header');
 var searchForm = document.querySelector('#search-form');
 var navBar = document.querySelector('#nav-bar-2');
 
+navBar.addEventListener('click', function(e) {
+    var navs = document.querySelectorAll('.hidden');
+    for (let nav of navs) {
+        nav.classList.remove('show-active');
+    }
+    e.target.classList.add('show-active');
+    if (e.target === navBar) {
+        navBar.classList.remove('show-active');
+    }
+    console.log(e.target);
+});
 
 // ajax request
 searchForm.addEventListener('submit', function(e) {
