@@ -13,7 +13,7 @@ navBar.addEventListener('mousedown', function(e) {
         navBar.classList.remove('show-active');
     }
     console.log(e.target);
-})
+});
 
 
 // ajax request
