@@ -43,3 +43,4 @@ searchForm.addEventListener('submit', function(e) {
     xhttp.setRequestHeader('Authorization', '563492ad6f917000010000018a35618275544479aa4dc8840d5ce33a');
     xhttp.send();
 });
+
