@@ -6,18 +6,21 @@
 
 html, body {
     height: 100%;
-    font-size: 62.5%;
     font-family: 'Heebo', sans-serif;
+    color: white;
 }
 
 nav {
-    height: 10%;
+    /* height: 10%;
     flex-grow: 1;
-    display: flex;
+    display: flex; */
+}
+
+.container {
 }
 
 /*logo*/
-nav div:nth-of-type(1) {
+/* nav div:nth-of-type(1) {
     width: 4rem;
     height: 4rem;
     font-weight: 900;
@@ -132,11 +135,11 @@ li {
     color: white;
     margin-right: .5ch;
     
-}
+} */
 
 /* end of header*/
 
-.spacer {
+/* .spacer {
     width: 100%;
     height: 7rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -166,7 +169,7 @@ li {
 }
 
 /*class to add blue tab selector when active*/
-.show-active {
+/* .show-active {
     border-bottom: 1px solid rgb(86, 126, 255);
     color: rgb(86, 126, 255);
 }
@@ -184,10 +187,10 @@ main {
 .home {
     display: flex;
     padding: .5em 0 1.5em 0;
-}
+} */ */
 
 /*Free Stock Photos*/
-.home > h2 {
+/* .home > h2 {
     font-size: 1.8rem;
     font-weight: 500;
 }
@@ -220,16 +223,16 @@ main {
     background-size: cover;
     width: 100%;
     height: 350px;
-}
+} */
 
 
 /* small devices */
-@media only screen and (min-width: 700px) {
+/* @media only screen and (min-width: 700px) {
     
-}
+} */
 
 /* Large devices*/
-@media only screen and (min-width: 850px) {
+/* @media only screen and (min-width: 850px) {
     .join  {
         font-weight: 900;
         border-radius: 5px;
@@ -242,9 +245,9 @@ main {
         align-items: center;
     }
     
-}
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 850px) {
+/* @media only screen and (min-width: 850px) {
     
-}
+} */
