@@ -21,6 +21,20 @@ document.addEventListener("DOMContentLoaded", function(){
             var pic = random[x];
             var bkgrd = `no-repeat url("${pic.original}")`;
             main.style.background = bkgrd;
+
+            random.forEach(function(item) {
+                var image = document.createElement('div');
+                image.innerHTML = `
+                <div class="col-sm">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body py-5">
+                            <img class="img-fluid"src=${item.medium}>
+                        </div>
+                    </div>
+                </div>`
+                ;
+                picturesCntr.appendChild(image);
+            });
         }
     }
     var randomQuery = ['surfing', 'sand', 'forest', 'party', 'island', 'dancing', 'sports', 'mountains', 'ocean', 'stars']
