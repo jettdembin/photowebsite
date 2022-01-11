@@ -23,24 +23,12 @@ document.addEventListener("DOMContentLoaded", function(){
             main.style.background = bkgrd;
         }
     }
-    var randomQuery = ['surfing', 'red', 'forest', 'party', 'island', 'dancing', 'sports', 'mountains', 'ocean', 'stars']
+    var randomQuery = ['surfing', 'sand', 'forest', 'party', 'island', 'dancing', 'sports', 'mountains', 'ocean', 'stars']
     var homeImg = randomQuery[x];
     xhttp.open("GET", `https://api.pexels.com/v1/search?query=${homeImg}`, true);
     xhttp.setRequestHeader('Authorization', '563492ad6f917000010000018a35618275544479aa4dc8840d5ce33a');
     xhttp.send();
 });
-
-// navBar.addEventListener('click', function(e) {
-//     var navs = document.querySelectorAll('.hidden');
-//     for (let nav of navs) {
-//         nav.classList.remove('show-active');
-//     }
-//     e.target.classList.add('show-active');
-//     if (e.target === navBar) {
-//         navBar.classList.remove('show-active');
-//     }
-//     console.log(e.target);
-// });
 
 
 // ajax request
@@ -61,9 +49,9 @@ searchForm.addEventListener('submit', function(e) {
             photos.forEach(function(item) {
                 var image = document.createElement('div');
                 image.innerHTML = `
-                <div class="col-md">
+                <div class="col-sm">
                     <div class="card bg-dark text-light">
-                        <div class="card-body">
+                        <div class="card-body py-5">
                             <img class="img-fluid"src=${item.medium}>
                         </div>
                     </div>
