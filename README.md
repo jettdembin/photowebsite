@@ -1,6 +1,6 @@
 # Hello Photo, API
 
-This is a website demonstrates the aquisition of data through an APi provided by the website Pexels.com. It also demonstrates use of boostrap.
+This website demonstrates the aquisition of data through an APi provided by the website Pexels.com. It also demonstrates use of boostrap.
 
 Feel free to search any scenery that comes to mind, and the application will return professional photoes.
 
