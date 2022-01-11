@@ -32,8 +32,15 @@ searchForm.addEventListener('submit', function(e) {
                 
             photos.forEach(function(item) {
                 var image = document.createElement('div');
-                image.innerHTML = `<img src=${item.medium}>
-                `
+                image.innerHTML = `
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <img class="img-fluid"src=${item.medium}>
+                        </div>
+                    </div>
+                </div>`
+                ;
                 picturesCntr.appendChild(image);
             });
         }

@@ -38,14 +38,15 @@
         </div>
       </div>
     </nav>
+
     <section style="height: 80vh;" class="d-flex text-center">
       <div class="container m-auto">
         <div class="center-form-cntr">
-          <h1>The best free stock photos & videos shared by talented creators.</h1>
+          <h1 class="p-5">The best free stock photos & videos shared by talented creators.</h1>
           <form id="search-form">
-            <div class="form-cntr">
-              <input class="search-bar" id="search-bar" placeholder="Search for free photos and videos" type="text"></input>
-              <button class="search-icon">
+            <div class="">
+              <input class="ps-3 pe-5 py-2 me-2" id="search-bar" placeholder="Search for free photos and videos" type="text"></input>
+              <button class="py-2 px-2">
                 <i class="fas fa-search"></i>
               </button>
             </div>
@@ -85,14 +86,18 @@
       </div>
     </div> 
     <main>
-      <div class="d-flex justify-content-between p-5" id="home">
-        <h5>Free Stock Photos</h5>
-        <div class="trending">
-          <h5>Trending <span class="arrow">ˬ</span></h5>
+      <div class="container">
+        <div class="d-flex justify-content-between p-5" id="home">
+          <h5>Free Stock Photos</h5>
+          <div class="trending">
+            <h5>Trending <span class="arrow">ˬ</span></h5>
+          </div>
+        </div>
+        <div class="container p-5">
+          <section class="row text-center g-4" id="pictures-cntr">
+          </section>
         </div>
       </div>
-      <section class="content-wrapper" id="pictures-cntr">
-      </section>
     </main>
 
     <script src="./app.js"></script>
