@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     var randomQuery = ['surfing', 'sand', 'forest', 'party', 'island', 'dancing', 'sports', 'mountains', 'ocean', 'stars']
     var homeImg = randomQuery[x];
-    xhttp.open("GET", `https://api.pexels.com/v1/search?query=${homeImg}`, true);
+    xhttp.open("GET", `https://api.pexels.com/v1/search?query=${homeImg}&per_page=10`, true);
     xhttp.setRequestHeader('Authorization', '563492ad6f917000010000018a35618275544479aa4dc8840d5ce33a');
     xhttp.send();
 });
@@ -76,7 +76,7 @@ searchForm.addEventListener('submit', function(e) {
         }
     }
     var textValue = document.querySelector('#search-bar').value;
-    xhttp.open("GET", `https://api.pexels.com/v1/search?query=${textValue}&per_page=16`, true);
+    xhttp.open("GET", `https://api.pexels.com/v1/search?query=${textValue}&per_page=10`, true);
     xhttp.setRequestHeader('Authorization', '563492ad6f917000010000018a35618275544479aa4dc8840d5ce33a');
     xhttp.send();
 });
