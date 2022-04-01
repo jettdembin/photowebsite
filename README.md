@@ -8,4 +8,4 @@ While the application does have two navigation bars, it will not direct the user
 
 ## Technologies Used
 
-HTML5 | CSS3 | Vanilla JavaScript
+HTML5 | CSS3 | JavaScript | Bootstrap
